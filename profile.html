@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | ROBUSPHERE</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ROBU<span class="highlight">SPHERE</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li id="nav-profile"><a href="profile.html" class="nav-link active">Profile</a></li>
+                <li id="nav-admin" style="display: none;"><a href="admin.html" class="nav-link">Admin</a></li>
+                <li id="nav-logout"><a href="#" id="logout-btn" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">User <span class="highlight">Profile</span></h2>
+            <div class="card" style="max-width: 600px; margin: 0 auto; text-align: left;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <i class="fas fa-user-circle" style="font-size: 5rem; color: var(--primary);"></i>
+                </div>
+                <div id="profile-details">
+                    <p><strong>Username:</strong> <span id="profile-username">Loading...</span></p>
+                    <p><strong>Role:</strong> <span id="profile-role">Loading...</span></p>
+                    <p><strong>Joined:</strong> <span id="profile-joined">Loading...</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 ROBUSPHERE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

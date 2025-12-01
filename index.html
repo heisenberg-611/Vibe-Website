@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBUSPHERE | Prompt Engineering Competition</title>
+    <meta name="description"
+        content="Join ROBUSPHERE, the ultimate Prompt Engineering Competition by ROBU. Innovate, Automate, and Elevate with AI.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ROBU<span class="highlight">SPHERE</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#rules" class="nav-link">Rules</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <!-- Auth Links -->
+                <li id="nav-login"><a href="#" id="login-btn" class="nav-link">Login</a></li>
+                <li id="nav-register"><a href="#register" class="nav-link btn-primary">Register Now</a></li>
+
+                <!-- Authenticated Links (Hidden by default) -->
+                <li id="nav-profile" style="display: none;"><a href="profile.html" class="nav-link">Profile</a></li>
+                <li id="nav-admin" style="display: none;"><a href="admin.html" class="nav-link">Admin</a></li>
+                <li id="nav-logout" style="display: none;"><a href="#" id="logout-btn" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+
+        <!-- Parallax Layers -->
+        <div class="parallax-layer layer-1" data-speed="-0.1"></div>
+        <div class="parallax-layer layer-2" data-speed="0.2" data-rotate="0.05">
+            <i class="fas fa-microchip floating-icon" style="top: 20%; left: 10%; font-size: 4rem;"></i>
+            <i class="fas fa-code floating-icon" style="top: 70%; left: 80%; font-size: 3rem;"></i>
+            <i class="fas fa-network-wired floating-icon"
+                style="top: 40%; left: 5%; font-size: 2rem; opacity: 0.5;"></i>
+        </div>
+        <div class="parallax-layer layer-3" data-speed="-0.4" data-rotate="-0.05">
+            <div class="shape circle" style="top: 15%; right: 15%;"></div>
+            <div class="shape square" style="bottom: 20%; left: 20%;"></div>
+            <div class="shape triangle" style="top: 60%; right: 10%;"></div>
+        </div>
+        <div class="parallax-layer layer-4" data-speed="0.6" data-rotate="0.1">
+            <div class="shape hexagon" style="top: 10%; left: 40%;"></div>
+            <i class="fas fa-robot floating-icon" style="bottom: 15%; right: 30%; font-size: 5rem; opacity: 0.1;"></i>
+        </div>
+
+        <div class="container hero-content tilt-card" data-speed="0.05">
+            <h1 class="glitch" data-text="ROBUSPHERE">ROBUSPHERE</h1>
+            <p class="subtitle">Prompt Engineering Competition 2025</p>
+            <p class="tagline">"Let’s Innovate, Automate, and Elevate Together!"</p>
+            <div class="hero-btns">
+                <a href="#register" class="btn btn-glow">Join the Future</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">The <span class="highlight">Mission</span></h2>
+            <div class="grid-2">
+                <div class="card" data-aos="fade-up">
+                    <i class="fas fa-robot card-icon"></i>
+                    <h3>Objective</h3>
+                    <p>A competition under ROBU (Robotics Club of BRAC University) challenging participants to create a
+                        fully functional website using ChatGPT-generated code and content only. Focus on creativity,
+                        design sense, and prompt crafting skills.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-users card-icon"></i>
+                    <h3>Eligibility</h3>
+                    <p>Open to all current HR & IT Department members. Individual competition (teams allowed).
+                        Participants can also join Project Showcase & Line Follower Race.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Rules & <span class="highlight">Guidelines</span></h2>
+            <div class="rules-grid">
+                <div class="rule-item">
+                    <i class="fas fa-brain"></i>
+                    <h4>ChatGPT Only</h4>
+                    <p>Must generate all code and content using ChatGPT. Only minor manual edits allowed.</p>
+                </div>
+                <div class="rule-item">
+                    <i class="fas fa-code"></i>
+                    <h4>Allowed Tech</h4>
+                    <p>HTML, CSS, JS, PHP. No frameworks. VS Code + Live Server.</p>
+                </div>
+                <div class="rule-item">
+                    <i class="fas fa-hourglass-half"></i>
+                    <h4>Duration</h4>
+                    <p>Total time: 1 Hour. Fast, efficient, and creative.</p>
+                </div>
+                <div class="rule-item">
+                    <i class="fas fa-ban"></i>
+                    <h4>Disqualification</h4>
+                    <p>Plagiarism, prewritten code, or failure to submit prompt history leads to disqualification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation Section -->
+    <section id="evaluation" class="section">
+        <div class="container">
+            <h2 class="section-title">Evaluation <span class="highlight">Criteria</span></h2>
+            <div class="evaluation-wrapper">
+                <div class="eval-category">
+                    <h3>Creativity (40)</h3>
+                    <ul>
+                        <li>Parallax Effect (10)</li>
+                        <li>Theme Consistency (10)</li>
+                        <li>Animation & Icons (10)</li>
+                        <li>Color & Outlook (10)</li>
+                    </ul>
+                </div>
+                <div class="eval-category">
+                    <h3>Functionality (30)</h3>
+                    <ul>
+                        <li>UI/UX (10)</li>
+                        <li>Responsiveness (10)</li>
+                        <li>Navigation (10)</li>
+                    </ul>
+                </div>
+                <div class="eval-category">
+                    <h3>AI Usage (20)</h3>
+                    <ul>
+                        <li>Prompting Style</li>
+                        <li>Structure</li>
+                        <li>Effective Usage</li>
+                    </ul>
+                </div>
+                <div class="eval-category bonus">
+                    <h3>Bonus (20)</h3>
+                    <ul>
+                        <li>Backend Features</li>
+                        <li>Login/Auth</li>
+                        <li>Search/Sort</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Event <span class="highlight">Timeline</span></h2>
+            <p class="date-highlight">December 6, 2025 (Saturday)</p>
+            <div class="timeline-controls">
+                <input type="text" id="timeline-search" placeholder="Search events...">
+                <select id="timeline-sort">
+                    <option value="default">Sort by Time</option>
+                    <option value="asc">Name (A-Z)</option>
+                    <option value="desc">Name (Z-A)</option>
+                </select>
+            </div>
+            <div class="timeline" id="timeline-container">
+                <!-- Timeline items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section">
+        <div class="container">
+            <h2 class="section-title">Awards & <span class="highlight">Prizes</span></h2>
+            <div class="awards-grid">
+                <div class="award-card gold">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Winner</h3>
+                    <p>Crest + Certificate</p>
+                </div>
+                <div class="award-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Participants</h3>
+                    <p>Official Certificate</p>
+                </div>
+                <div class="award-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Recognition</h3>
+                    <p>Social Media Feature</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="section cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to <span class="highlight">Innovate?</span></h2>
+                <p>Registration Deadline: November 29, 2025</p>
+                <p>Fee: BDT 100 | Team: Up to 3 Members</p>
+                <div class="contact-info">
+                    <p><strong>Contact:</strong> Abdulla Al Noman (01721556113) | Raju (01815364782)</p>
+                </div>
+                <a href="#" class="btn btn-glow btn-large">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 ROBUSPHERE. All rights reserved. | <i class="fas fa-eye"></i> <span
+                    id="viewers-count">Loading...</span> Viewers</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="modal-btns">
+                    <button type="submit" class="btn btn-primary" id="login-submit">Login</button>
+                    <button type="button" class="btn btn-outline" id="register-submit">Register</button>
+                </div>
+            </form>
+            <p id="auth-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
